@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: cursive;
+    background-color: slateblue;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.year{
+    font-size: 5em;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.Countdown{
+    display: flex;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    
+}
+
+.Countdown div{
+    margin: 10px;
+    font-size: 2.5em;
+    text-align: center;
+    position: relative;
+
+}
+.Countdown div::before{
+    content: "";
+    bottom: -20px;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    
+
+
+}
+.Countdown #day::before{
+    content: "Day";
+}
+.Countdown #hour::before{
+    content: "Hour";
+
+
+}
+.Countdown #minute::before{
+    content: "Minute";
+
+
+}
+.Countdown #second::before{
+    content: "Second";
+
+}
+
